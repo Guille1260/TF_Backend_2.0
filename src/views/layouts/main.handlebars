@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de arqueros</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    {{#unless isRegisterPage}}
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="/">INICIO</a></li>
+                        <li><a href="/api/sessions/register">REGISTRARSE</a></li>
+                        <li><a href="/api/sessions/login">INICIAR SESIÓN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo-container">
+                
+            </div>
+        </header>
+        <div class="text">
+            <marquee>ENVIOS GRATIS: 🛵 TUCUMAN $20.000 - 📦 TODO EL PAIS $50.000 Y HASTA 3 CUOTAS S/ INTERÉS 💳 - 10% PAGO EFECTIVO
+                💸</marquee>
+        </div>
+    {{/unless}}
+
+
+    {{{body}}}
+
+
+    {{#unless isRegisterPage}}
+    <footer>
+         PROYECTO FINAL PROGRAMACIÓN BACKEND II: DISEÑO Y ARQUITECTURA BACKEND
+    </footer>
+    {{/unless}}
+</body>
+
+</html>
